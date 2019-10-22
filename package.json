@@ -1,0 +1,16 @@
+{
+  "name": "api-trilhas",
+  "version": "1.0.0",
+  "description": "Api de trilhas de eventos",
+  "main": "app.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "author": "Rafael Tietz Strellow",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "nyc": "^14.1.1"
+  }
+}
