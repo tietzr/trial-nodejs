@@ -12,7 +12,7 @@ router.post("/", async (req, res, next) => {
     if(!req.body.data) res.status(500).send(new Error(nls.PayloadError));
     
     try {
-        var result = await trackController.generateTrack(req.body.data);
+        var result = await trackController.generateTracks(req.body.data);
         res.status(200).send(result);
     } catch (error) { next(error) };
 });
