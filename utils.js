@@ -30,7 +30,7 @@ class Utils {
         return new Date(date.getTime() + minutes * 60000);
     }
 
-    // Formata as string de data pra retornar apenas informações de hora
+    // Formata os textos de data pra retornar apenas informações de hora
     // Formato de saída HH:mm AM/PM
     formatTime (dateToFormat){
         if (!dateToFormat instanceof Date ) throw new TypeError(nls.InvalidTypeError);
@@ -40,7 +40,7 @@ class Utils {
         return formatterList.join(":");
     }
 
-    // Calcula o horário de uma palestra baseado no tempo inicial na duração
+    // Calcula o horário de uma palestra baseado no tempo inicial e na duração
     // Retorna um texto formatado com o horário.
     getLectureScheduleTime(startTimeString, valueToAdd) {
         var start = new Date(config.defaultStringDate + startTimeString);
@@ -52,7 +52,7 @@ class Utils {
 
     ////// Funções auxiliares
 
-    // Ordena um array de objetos baseado em uma propriedade
+    // Ordena um array de objetos baseado em uma determada propriedade do objeto
     dynamicSort(property) {
         var sortOrder = 1;
         if(property[0] === "-") {

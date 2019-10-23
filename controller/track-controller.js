@@ -108,7 +108,7 @@ class TrackController {
 
     /*
         Lógica com os passos para criação das Tracks.
-        Retorn uma lista de conforme especificação de listagem
+        Retorna uma lista de conforme especificação de listagem
     */
     generateTracks(options) {
         if (options.length == 0) throw new Error(nls.EmptyLectureList);

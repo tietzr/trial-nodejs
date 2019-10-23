@@ -26,7 +26,7 @@ describe('Track.generate', function () {
         done();
     });
 
-    it('Should generate a incomplete data error', function (done) {
+    it('Should generate an incomplete data error', function (done) {
         var track = new TrackController();
         assert.throws(track.generateTracks.bind(["Pair Programming vs Noise"]), nls.LectureWhithoutDuration);
         done();
